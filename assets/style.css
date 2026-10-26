@@ -14,3 +14,7 @@
 /* Flag icons are SVGs, so they render consistently even without emoji fonts. */
 .language-picker .flag-icon{display:block;width:29px;height:20px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
 @media(max-width:600px){.language-picker .flag-icon{width:25px;height:17px}}
+
+/* Restore compact letter-based language switcher. */
+.language-picker .lang{font-size:12px;font-weight:750;letter-spacing:.03em;min-width:37px;min-height:34px;padding:6px 8px}
+@media(max-width:600px){.language-picker .lang{font-size:11px;min-width:31px;min-height:30px;padding:5px 6px}}
