@@ -1,0 +1,494 @@
+media:
+  input: media
+  output: /EmiVeld/media
+content:
+  - name: site
+    label: "Website settings"
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: artist_name
+        label: "artist name"
+        type: string
+      - name: headline_en
+        label: "headline en"
+        type: string
+      - name: headline_nl
+        label: "headline nl"
+        type: string
+      - name: headline_pt
+        label: "headline pt"
+        type: string
+      - name: tagline_en
+        label: "tagline en"
+        type: text
+      - name: tagline_nl
+        label: "tagline nl"
+        type: text
+      - name: tagline_pt
+        label: "tagline pt"
+        type: text
+      - name: about_en
+        label: "about en"
+        type: text
+      - name: about_nl
+        label: "about nl"
+        type: text
+      - name: about_pt
+        label: "about pt"
+        type: text
+      - name: announcement_en
+        label: "announcement en"
+        type: string
+      - name: announcement_nl
+        label: "announcement nl"
+        type: string
+      - name: announcement_pt
+        label: "announcement pt"
+        type: string
+      - name: portrait
+        label: "portrait"
+        type: image
+      - name: contact_email
+        label: "contact email"
+        type: string
+      - name: instagram
+        label: "instagram"
+        type: string
+      - name: pinterest
+        label: "pinterest"
+        type: string
+      - name: youtube
+        label: "youtube"
+        type: string
+      - name: other_social
+        label: "other social"
+        type: string
+      - name: shop_enabled
+        label: "shop enabled"
+        type: boolean
+  - name: works
+    label: "Artworks"
+    type: file
+    path: content/works.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: "id"
+        type: string
+      - name: title_en
+        label: "title en"
+        type: string
+      - name: title_nl
+        label: "title nl"
+        type: string
+      - name: title_pt
+        label: "title pt"
+        type: string
+      - name: description_en
+        label: "description en"
+        type: text
+      - name: description_nl
+        label: "description nl"
+        type: text
+      - name: description_pt
+        label: "description pt"
+        type: text
+      - name: category
+        label: "category"
+        type: string
+      - name: published
+        label: "published"
+        type: boolean
+      - name: year
+        label: "year"
+        type: string
+      - name: media_type
+        label: "media type"
+        type: string
+      - name: image
+        label: "image"
+        type: image
+      - name: media_url
+        label: "media url"
+        type: string
+      - name: materials
+        label: "materials"
+        type: string
+      - name: tags
+        label: "tags"
+        type: string
+      - name: youtube
+        label: "youtube"
+        type: string
+  - name: updates
+    label: "News and updates"
+    type: file
+    path: content/updates.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: "id"
+        type: string
+      - name: title_en
+        label: "title en"
+        type: string
+      - name: title_nl
+        label: "title nl"
+        type: string
+      - name: title_pt
+        label: "title pt"
+        type: string
+      - name: description_en
+        label: "description en"
+        type: text
+      - name: description_nl
+        label: "description nl"
+        type: text
+      - name: description_pt
+        label: "description pt"
+        type: text
+      - name: slug
+        label: "slug"
+        type: string
+      - name: date
+        label: "date"
+        type: date
+      - name: image
+        label: "image"
+        type: image
+  - name: exhibitions
+    label: "Exhibitions"
+    type: file
+    path: content/exhibitions.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: "id"
+        type: string
+      - name: title_en
+        label: "title en"
+        type: string
+      - name: title_nl
+        label: "title nl"
+        type: string
+      - name: title_pt
+        label: "title pt"
+        type: string
+      - name: description_en
+        label: "description en"
+        type: text
+      - name: description_nl
+        label: "description nl"
+        type: text
+      - name: description_pt
+        label: "description pt"
+        type: text
+      - name: venue
+        label: "venue"
+        type: string
+      - name: city
+        label: "city"
+        type: string
+      - name: location
+        label: "location"
+        type: string
+      - name: start_date
+        label: "start date"
+        type: date
+      - name: end_date
+        label: "end date"
+        type: date
+      - name: url
+        label: "url"
+        type: string
+      - name: image
+        label: "image"
+        type: image
+  - name: workshops
+    label: "Workshops"
+    type: file
+    path: content/workshops.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: "id"
+        type: string
+      - name: title_en
+        label: "title en"
+        type: string
+      - name: title_nl
+        label: "title nl"
+        type: string
+      - name: title_pt
+        label: "title pt"
+        type: string
+      - name: description_en
+        label: "description en"
+        type: text
+      - name: description_nl
+        label: "description nl"
+        type: text
+      - name: description_pt
+        label: "description pt"
+        type: text
+      - name: duration
+        label: "duration"
+        type: string
+      - name: price
+        label: "price"
+        type: string
+      - name: capacity
+        label: "capacity"
+        type: number
+      - name: location
+        label: "location"
+        type: string
+      - name: image
+        label: "image"
+        type: image
+  - name: events
+    label: "Calendar events"
+    type: file
+    path: content/events.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: "id"
+        type: string
+      - name: title_en
+        label: "title en"
+        type: string
+      - name: title_nl
+        label: "title nl"
+        type: string
+      - name: title_pt
+        label: "title pt"
+        type: string
+      - name: description_en
+        label: "description en"
+        type: text
+      - name: description_nl
+        label: "description nl"
+        type: text
+      - name: description_pt
+        label: "description pt"
+        type: text
+      - name: slug
+        label: "slug"
+        type: string
+      - name: date
+        label: "date"
+        type: date
+      - name: time
+        label: "time"
+        type: string
+      - name: location
+        label: "location"
+        type: string
+      - name: url
+        label: "url"
+        type: string
+      - name: image
+        label: "image"
+        type: image
+  - name: collaborations
+    label: "Collaborations"
+    type: file
+    path: content/collaborations.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: "id"
+        type: string
+      - name: title_en
+        label: "title en"
+        type: string
+      - name: title_nl
+        label: "title nl"
+        type: string
+      - name: title_pt
+        label: "title pt"
+        type: string
+      - name: description_en
+        label: "description en"
+        type: text
+      - name: description_nl
+        label: "description nl"
+        type: text
+      - name: description_pt
+        label: "description pt"
+        type: text
+      - name: artist
+        label: "artist"
+        type: string
+      - name: artists
+        label: "artists"
+        type: string
+      - name: url
+        label: "url"
+        type: string
+      - name: image
+        label: "image"
+        type: image
+      - name: year
+        label: "year"
+        type: string
+  - name: inspiration
+    label: "Inspiration"
+    type: file
+    path: content/inspiration.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: "id"
+        type: string
+      - name: title_en
+        label: "title en"
+        type: string
+      - name: title_nl
+        label: "title nl"
+        type: string
+      - name: title_pt
+        label: "title pt"
+        type: string
+      - name: description_en
+        label: "description en"
+        type: text
+      - name: description_nl
+        label: "description nl"
+        type: text
+      - name: description_pt
+        label: "description pt"
+        type: text
+      - name: kind
+        label: "kind"
+        type: string
+      - name: creator
+        label: "creator"
+        type: string
+      - name: url
+        label: "url"
+        type: string
+      - name: image
+        label: "image"
+        type: image
+  - name: resources
+    label: "Free resources"
+    type: file
+    path: content/resources.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: "id"
+        type: string
+      - name: title_en
+        label: "title en"
+        type: string
+      - name: title_nl
+        label: "title nl"
+        type: string
+      - name: title_pt
+        label: "title pt"
+        type: string
+      - name: description_en
+        label: "description en"
+        type: text
+      - name: description_nl
+        label: "description nl"
+        type: text
+      - name: description_pt
+        label: "description pt"
+        type: text
+      - name: kind
+        label: "kind"
+        type: string
+      - name: url
+        label: "url"
+        type: string
+      - name: image
+        label: "image"
+        type: image
+  - name: projects
+    label: "Creative projects"
+    type: file
+    path: content/projects.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: "id"
+        type: string
+      - name: title_en
+        label: "title en"
+        type: string
+      - name: title_nl
+        label: "title nl"
+        type: string
+      - name: title_pt
+        label: "title pt"
+        type: string
+      - name: description_en
+        label: "description en"
+        type: text
+      - name: description_nl
+        label: "description nl"
+        type: text
+      - name: description_pt
+        label: "description pt"
+        type: text
+      - name: slug
+        label: "slug"
+        type: string
+      - name: year
+        label: "year"
+        type: string
+      - name: image
+        label: "image"
+        type: image
+  - name: shop
+    label: "Shop (optional)"
+    type: file
+    path: content/shop.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: "id"
+        type: string
+      - name: title_en
+        label: "title en"
+        type: string
+      - name: title_nl
+        label: "title nl"
+        type: string
+      - name: title_pt
+        label: "title pt"
+        type: string
+      - name: description_en
+        label: "description en"
+        type: text
+      - name: description_nl
+        label: "description nl"
+        type: text
+      - name: description_pt
+        label: "description pt"
+        type: text
+      - name: price
+        label: "price"
+        type: string
+      - name: image
+        label: "image"
+        type: image
+      - name: url
+        label: "url"
+        type: string
